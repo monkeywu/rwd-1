@@ -1,0 +1,152 @@
+/*  all  */
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+body {
+  border-top: 10px solid #16242f;
+  font-family: 'fjord', serif;
+  line-height: 1.5;
+}
+a {
+  display: block;
+  color: #16242f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: block;
+}
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.holder {
+  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* header  */
+#header {
+  text-align: center;
+  margin: 2em 0 2em 0;
+}
+#header .logo a {
+  background: url("../image/logo.svg");
+  width: 275px;
+  height: 128px;
+  background-size: 275px 128px;
+  margin: 0 auto;
+}
+#header .nav {
+  margin-top: 2em;
+  font-size: 1em;
+}
+#header .nav li {
+  margin: 0;
+  letter-spacing: 2px;
+}
+#header .nav li a:hover {
+  color: #a2865e;
+  text-decoration: none;
+}
+/*  content  */
+.col-12 {
+  width: 100%;
+  margin-bottom: 5%;
+  position: relative;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fff;
+}
+.cover:hover {
+  opacity: 1;
+}
+.cover h1 {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+/*  footer  */
+#footer {
+  text-align: center;
+  color: #a2865e;
+  margin: 2em 0 2em 0;
+}
+#footer h3 {
+  display: inline-block;
+  margin: 0;
+  font-weight: 100;
+  font-size: 100%;
+}
+#footer p {
+  font-weight: 100;
+}
+.social-media ul {
+  display: inline-block;
+}
+.social-media ul li {
+  float: left;
+  padding: 0 0.35em;
+}
+.social-media ul li a {
+  color: #a2865e;
+  font-size: 1.5em;
+}
+.social-media ul li a:hover {
+  color: #16242f;
+}
+/*   rwd    */
+@media (min-width: 480px) {
+  .col-12 {
+    float: left;
+    width: 48.375%;
+  }
+  .col-12:nth-of-type(even) {
+    float: right;
+  }
+}
+@media (min-width: 900px) {
+  #header .nav ul {
+    font-size: 1.5em;
+  }
+  #header .nav ul li {
+    display: inline-block;
+    margin-right: 1%;
+  }
+  .col-12 {
+    float: left;
+    width: 22.75%;
+    margin: 2% 0 0 2%;
+  }
+  .col-12:nth-of-type(even) {
+    float: left;
+  }
+  .copy {
+    float: left;
+  }
+  .copy p {
+    display: inline-block;
+  }
+  .social-media {
+    float: right;
+  }
+}
